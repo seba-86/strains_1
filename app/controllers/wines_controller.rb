@@ -3,9 +3,8 @@ class WinesController < ApplicationController
 
   # GET /wines
   def index
-    @wines = Wine.all
+    @wines = Wine.asc.includes(:strains)
   end
-
   # GET /wines/1
   def show
   end

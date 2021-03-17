@@ -7,7 +7,7 @@
     <tr>
       <th>Name</th>
       <th>Strains</th>
-      <th>Percentage_Strains</th>
+      <th>Percentage (%)</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,7 +26,7 @@
         <td>
           <ul>
             <% wine.assemblies.each do |assem| %>
-            <li style="list-style: none;"><%= assem.percentage%>%</li>
+            <li style="list-style: none;">(<%= assem.percentage%>%)</li>
           <%end %>
           </ul>
         </td>
